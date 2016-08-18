@@ -1,45 +1,25 @@
-# ShoppingCart
+#Introduction
 
-Introduction
+ShoppingCart - This application will calculate total cost of selected items and it will apply any applicable offer availble on a particular item.
 
-WeatherApp - This application will return current weather data from OpenWeatherMap.org, based on a city chosen by the user.
+For example: 
+Give :- Apples cost 60p and oranges cost 25p.
+[ Apple, Apple, Orange, Apple ] => £2.05
 
-Source of Data
+#Source of Data
 
-Weather data is read from http://openweathermap.org/ using API http://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}
+Type and Price of item are currently hard coded in code.  
 
-Pre-requisite
+#Pre-requisite
 
-To use this app, you need to register an API Key on http://openweathermap.org/ service. Update API url and key in src/main/resources/application-prod.properties
+To use this app, you need scala and sbt tool.
 
-How to run
+#How to verify
 
-This app has embedded tomcat server. In order to run this website execute below maven command mvn spring-boot:run
+On sbt console execute below commands :-
+compiile - to compile the code
+test - to test the code
 
-It will start the embedded tomcat server on default port 8080
+#Technologies used
 
-How to Use
-
-Access the website using http://localhost:8080/weather_search
-Enter the City Name
-Hit Submit button
-It will display Weather Summary Page
-Hit back button to go back to pervious page.
-Technologies used
-
-Spring Core
-Spring MVC
-RestTemplate
-Spring Boot
-Maven
-Html/thymeleaf
-Mockito
-Junit
-Embedded Tomcat Server
-MockMvc
-TDD etc...
-TODO
-
-Java Doc
-Form Level Validation
-Message Resourcing
+Scala
